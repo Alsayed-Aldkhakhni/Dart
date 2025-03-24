@@ -56,7 +56,43 @@
  * Dart is as Python, Everything is an Object [defined or you do]
  */
 
-/*
+/* 7th
  * Methods in Dart as those in C++, member methods defined it the caller class.
    e.g. intVar == y you can though it as intVar.==(y)
+ */
+
+/*
+ * 8th
+ * How Dart knows the data type of the variable if we didn't define it?
+ * The Dart analyzer infers the variable's type from the literal assigned to it.
+ 
+ * var someInt = 10;
+ * Here the variable someInt is int and will remain int at the program course
+ *  won't accept other types.
+
+ * This generates an error. 
+ * var someInt = 10;
+ * someInt = 'Alsayed';
+
+ * This works fine, since someVar is of type dynamic.
+ * var someVar;
+ * someVar = 10;
+ * someVar = 'Alsayed';
+ *
+ */
+
+/* 
+ * 9th
+ * To know the current class of your variable use [is] operator.
+ * 
+ * var intVar = 10;
+ * print(intVar is String); // false
+ * print(intVar is int);    // true.
+ * print(intVar is dynamic);// true.
+ * 
+ * Or, you can use the member attribute [.runtimeType].
+ * 
+ * var str = 'Alsayed';
+ * pint(str.runtimeType); // String.
+ * 
  */
